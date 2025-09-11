@@ -1,8 +1,9 @@
 const sweet = "Candy";
 
-if(sweet === "Candy"){
-    console.log("no argument")
-}
-else{
-    console.log("School")
+if (process.argv[2] === undefined) {
+  // no argument passed
+  console.log("No argument");
+} else {
+  // argument exists
+  console.log(process.argv[2]);
 }
