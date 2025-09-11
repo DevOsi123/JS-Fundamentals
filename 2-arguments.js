@@ -1,10 +1,13 @@
-const number = 0;
-if(number === 1){
-    console.log("No Argument")
+let number = 0;
+
+for (let i = 2; i < process.argv.length; i++) {
+  number++;
 }
-else if(number === 2){
-    console.log("Argument Found")
-}
-else {
-    console.log("Arguments Found")
+
+if (number === 0) {
+  console.log("No argument");
+} else if (number === 1) {
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
 }
