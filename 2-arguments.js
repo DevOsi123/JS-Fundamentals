@@ -1,10 +1,10 @@
-const number = 10;
-if(number){
+const number = 0;
+if(number === 1){
     console.log("No Argument")
 }
-else if(number === 10){
+else if(number === 2){
     console.log("Argument Found")
 }
-else if(number != 10 || number < 10){
+else {
     console.log("Arguments Found")
 }
